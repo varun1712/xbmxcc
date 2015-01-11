@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/baap"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/rsz_2ves" />
+
+    <EditText
+        android:id="@+id/et_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_password"
+        android:layout_alignStart="@+id/et_password"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textColor="#FFFFFF"
+        android:hint="Application ID"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_alignLeft="@+id/et_password"
+        android:layout_alignRight="@+id/et_login"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="23dp"
+        android:background="#3384bd"
+        android:text="Log In" />
+
+    <TextView
+        android:id="@+id/tv_whatsthis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:textColor="#B7B9B8"
+        android:text="What's This?"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/bt_gotit"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#3384bd"
+        android:text="Okay..Got It!"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_whatsthis_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/whatsthis"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:lineSpacingExtra="5dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
